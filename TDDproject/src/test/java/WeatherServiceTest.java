@@ -1,5 +1,3 @@
-package org.campusmolndal.demo;
-
 import org.campusmolndal.WeatherService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
