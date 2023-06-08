@@ -1,33 +1,34 @@
 package org.campusmolndal;
 
-import java.sql.Connection;
-import java.util.Random;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class WeatherServiceAPI {
-    private static final String[] WEATHER_CONDITIONS = {
-                "Sunny", "Cloudy", "Rainy", "Windy", "Snowy"};
 
-    public String getWeather(String location) {
-        // Simulera anrop till API och hämta väderinformation
-        String weather = fetchWeatherFromAPI(location);
+    String apiKey = "";
+    String apiBase = "";
 
-        // Om mockningen av API:et misslyckades, använd en slumpmässig väderinformation
-        if (weather == null) {
-                weather = getRandomWeatherCondition();
-        }
-
-        return weather;
-        }
-
-        private String fetchWeatherFromAPI(String location) {
-        // Simulera anrop till verkligt API - I detta fall mockar vi bara anropet genom att returnera nullreturn null;
-        return null;
+    public void weatherServiceAPI(String apiKey) {
+        this.apiKey = apiKey;
+        apiBase = "http://api.openweathermap.org/data/2.5/weather?q=";
     }
 
-        private String getRandomWeatherCondition() {
-            Random random = new Random();
-            int index = random.nextInt(WEATHER_CONDITIONS.length);
-            return WEATHER_CONDITIONS[index];
+    private JSONObject getWeather(String city) throws IOException {
+        URL url = new URL(city);
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("GET");
+        BufferedReader in = new BufferedReader(new java.io.InputStreamReader(connection.getInputStream()));
+        String inputLine;
+        StringBuffer response = new StringBuffer();
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine + "\n");
         }
+        in.close();
+        return new JSONObject(response.toString());
+    }
 }
-

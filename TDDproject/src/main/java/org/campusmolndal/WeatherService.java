@@ -7,6 +7,7 @@ public class WeatherService {
         WeatherServiceAPI weatherMock = Mockito.mock(WeatherServiceAPI.class);
     }
     public String getWeather(String city) {
+
         return "Sunny";
     }
 }

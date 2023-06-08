@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TDDproject/JinTDD.iml" filepath="$PROJECT_DIR$/TDDproject/JinTDD.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/tdd-och-mock-Fringston.iml" filepath="$PROJECT_DIR$/.idea/tdd-och-mock-Fringston.iml" />
     </modules>
   </component>
