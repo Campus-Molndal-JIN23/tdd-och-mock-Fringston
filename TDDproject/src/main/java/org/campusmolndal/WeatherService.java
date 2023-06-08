@@ -15,5 +15,8 @@ public class WeatherService {
     public String getTemperature(String city) {
         return weatherServiceAPI.getWeather(city).getString("temperature");
     }
+    public String getWind(String city) {
+        return weatherServiceAPI.getWeather(city).getString("wind");
+    }
     
 }
