@@ -20,10 +20,6 @@ JSON är också något jag har svårt att förstå mig på.
 Jag använde mig av assertEqual och assertNotEqual för att testa att metoderna fungerade som de skulle. 
 Jag använde mig också av assertNotNull på ett test för att testa att det inte var null som returnerades.
 
-### Beskriv något som var besvärligt att få till
-
-### Beskriv om du fått byta lösning och varför i sådana fall
-
 
 ## Slutsatser
 
@@ -31,12 +27,13 @@ Jag använde mig också av assertNotNull på ett test för att testa att det int
 Själva testerna gick bra att göra. Jag hade inga problem med att få dem att fungera.
 
 ### Vad gick dåligt
-Att förstå hur alla kopplingar mellan de olika klasserna och hur allt hänger ihop.
+Att förstå alla kopplingar mellan de olika klasserna och hur allt hänger ihop. Vart mockningen skulle ske.
 
 ### Vad har du lärt dig
 Att @BeforeEach är väldigt användbart för att slippa skriva samma kod flera gånger.
 
-### Vad hade ni gjort annorlunda om ni gjort om projektet
+### Vad hade du gjort annorlunda om ni gjort om projektet
 Jag hade skrivit fler metoder och tester till dem.
 
 ### Vilka möjligheter ser du med de kunskaper du fått under kursen.
+Möjligheten att skapa program som är testade och fungerar som de ska. Att kunna skriva tester för att se att programmet fungerar som det ska.
