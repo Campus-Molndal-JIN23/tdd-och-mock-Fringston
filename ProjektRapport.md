@@ -15,7 +15,10 @@ Testerna är gjorda med hjälp av Mockito, vilket innebär att testerna inte tes
 Jag hade svårt för att förstå hur jag skulle använda mig av Mockito och hur mycket kod det behövdes i klassen som skulle koppla sig till API:et eftersom det egentligen inte behövdes någon riktig koppling.
 
 Jag har fortfarande svårt att greppa hela API-tänket och hur allt hänger ihop och skulle behöva träna mer på det.
+JSON är också något jag har svårt att förstå mig på.
 ### Beskriv lite olika lösningar du gjort
+Jag använde mig av assertEqual och assertNotEqual för att testa att metoderna fungerade som de skulle. 
+Jag använde mig också av assertNotNull på ett test för att testa att det inte var null som returnerades.
 
 ### Beskriv något som var besvärligt att få till
 
@@ -28,9 +31,12 @@ Jag har fortfarande svårt att greppa hela API-tänket och hur allt hänger ihop
 Själva testerna gick bra att göra. Jag hade inga problem med att få dem att fungera.
 
 ### Vad gick dåligt
+Att förstå hur alla kopplingar mellan de olika klasserna och hur allt hänger ihop.
 
 ### Vad har du lärt dig
+Att @BeforeEach är väldigt användbart för att slippa skriva samma kod flera gånger.
 
 ### Vad hade ni gjort annorlunda om ni gjort om projektet
+Jag hade skrivit fler metoder och tester till dem.
 
 ### Vilka möjligheter ser du med de kunskaper du fått under kursen.
