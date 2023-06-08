@@ -28,15 +28,6 @@ org.json 20230227
 * 3- Install the required dependencies or libraries.
 * 4- Run the test class within the project.
 
-
-## Credits
-
-* [Marcus] https://github.com/marcusjobb
-
-* [junit jupiter 5](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.7.0)
-
-If you followed tutorials, include links to those here as well.
-
 ## License
 #### MIT License
 
