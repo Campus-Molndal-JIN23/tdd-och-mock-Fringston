@@ -2,12 +2,18 @@ package org.campusmolndal;
 import java.sql.Connection;
 import org.mockito.Mockito;
 public class WeatherService {
-    public WeatherService() {
+    WeatherServiceAPI weatherServiceAPI;
 
-        WeatherServiceAPI weatherMock = Mockito.mock(WeatherServiceAPI.class);
+    public WeatherService(WeatherServiceAPI weatherServiceAPI) {
+        this.weatherServiceAPI = weatherServiceAPI;
     }
+
     public String getWeather(String city) {
-
-        return "Sunny";
+        return weatherServiceAPI.getWeather(city).getString("weather");
     }
+
+    public String getTemperature(String city) {
+        return weatherServiceAPI.getWeather(city).getString("temperature");
+    }
+    
 }
